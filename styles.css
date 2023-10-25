@@ -131,3 +131,34 @@ section{
 }
 
 /* For larger screens (beyond 1024px), the initial styles you provided will apply. */
+/* ... (your existing CSS before media queries) ... */
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* ... (Tablet styles from previous example) ... */
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .topboy {
+        /* Adjusting the container for a larger screen */
+        max-width: 1200px; /* Limiting max width for readability and better layout */
+        margin: 0 auto; /* Centers the container on larger screens */
+        gap: 30px;  /* Adds a larger gap between the sections for wider screens */
+    }
+
+    section {
+        width: 30%;  /* Adjust the section width to take up less space on wider screens */
+        /* Any other styles specific for larger desktop screens */
+    }
+
+    /* Adjusting buttons to fit better on larger desktop screens */
+    .stef, .jaq, .kit {
+        font-size: 22px;
+        padding: 14px 28px;
+        border-radius: 24px;
+    }
+}
+
+/* For screens wider than 1440px, the initial styles you provided will still apply, 
+   or you can add another media query if further adjustments are necessary. */
