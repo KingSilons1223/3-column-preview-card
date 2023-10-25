@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+}
+.topboy{
+    display: flex; /* This makes the child elements (sections) sit side by side */
+    justify-content: center; /* Centers the sections horizontally */
+    align-items: center; /* Centers the sections vertically */
+    min-height: 100vh; /* Makes it occupy the full viewport height */
+
+}
+section{
+    flex: none; /* This ensures sections don't stretch to fill space, since we're setting a specific width */
+    border: 1px solid #ccc;
+    width: 250px;  /* Adjust this to your desired width */
+    height: 500px; /* Adjust this to your desired height */
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sully{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    h1 {
+        color: #D3D3D3; /* This will give the h1 elements a light gray color */
+        margin-bottom: 5px; /* You can adjust this value to align it better with the p element */
+        align-self: left;
+    }
+    .dushane{
+        background-color: darkcyan;
+    }
+    .jamie{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    p {
+       color: hsla(0, 0%, 100%, 0.75);
+       margin-bottom: 5px;
+       align-self: left;
+    }
+    /*section button {
+        background-color: white;  
+        padding: 10px 20px; 
+        border: none; 
+        font-size: 24px; 
+        border-radius: 25px;  
+        margin-top: auto;  
+    }*/
+    
+    .stef {
+        background-color: white;
+        color: orange;
+        padding: 10px 20px;
+        border: none;
+        font-size: 18px;
+        border-radius: 25px;  /* Increased border-radius */
+        margin-top: auto;  /* This pushes the button to the bottom of its container */
+        align-self: center;
+    }
+    .jaq{
+        background-color: white;
+        color: darkcyan;;
+        padding: 10px 20px;
+        border: none;
+        font-size: 18px;
+        border-radius: 25px;  /* Increased border-radius */
+        margin-top: auto;  /* This pushes the button to the bottom of its container */
+        align-self: center;
+    }
+    .kit{
+        background-color: white;
+        color:  hsl(179, 100%, 13%);
+        padding: 10px 20px;
+        border: none;
+        font-size: 18px;
+        border-radius: 25px;  /* Increased border-radius */
+        margin-top: auto;  /* This pushes the button to the bottom of its container */
+        align-self: center;
+    }
+    /* ... (your previous CSS code) ... */
+
+@media (max-width: 375px) {
+    .topboy {
+        flex-direction: column; /* This stacks the child elements (sections) vertically */
+    }
+
+    section {
+        margin: 10px 0; /* Add some spacing between the sections when they are stacked vertically */
+        width: 100%; /* Makes the sections take full width of their container, which is .topboy */
+        height: auto; /* Resets the fixed height you set earlier */
+    }
+
+    /* Adjusting buttons to fit better on smaller screens */
+    .stef, .jaq, .kit {
+        font-size: 16px; /* Slightly reduce the font size */
+        padding: 8px 16px; /* Adjust the padding to make the button a bit smaller */
+        border-radius: 20px; /* Adjust the border-radius to match the new size */
+    }
+}
