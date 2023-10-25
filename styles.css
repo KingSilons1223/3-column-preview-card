@@ -107,3 +107,27 @@ section{
         border-radius: 20px; /* Adjust the border-radius to match the new size */
     }
 }
+/* ... (your existing CSS before media queries) ... */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .topboy {
+        /* At this point, the flex-direction is still row by default, so sections are side by side. 
+           We'll increase the spacing between sections for tablet. */
+        gap: 20px;  /* Adds gap between the sections */
+    }
+
+    section {
+        /* If you want sections to be wider on tablets */
+        width: 45%;  /* Makes the sections a bit less than half the container's width, given we have two columns */
+        /* Any other styles specific for tablet sections */
+    }
+
+    /* Adjusting buttons to fit better on tablet screens if needed */
+    .stef, .jaq, .kit {
+        font-size: 20px;
+        padding: 12px 24px;
+        border-radius: 22px;
+    }
+}
+
+/* For larger screens (beyond 1024px), the initial styles you provided will apply. */
